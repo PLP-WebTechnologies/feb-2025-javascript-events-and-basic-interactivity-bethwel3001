@@ -1,0 +1,151 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  background: #f4f7f8;
+  color: #333;
+  line-height: 1.6;
+  padding: 20px;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+header {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+header h1 {
+  font-size: 2.5rem;
+  color: #007acc;
+  margin-bottom: 10px;
+}
+
+header p {
+  font-size: 1.2rem;
+  color: #555;
+}
+
+main {
+  max-width: 700px;
+  margin: 0 auto;
+  background: #fff;
+  padding: 25px 30px;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+h2 {
+  color: #007acc;
+  margin-bottom: 15px;
+  border-bottom: 2px solid #007acc;
+  padding-bottom: 5px;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  font-weight: 600;
+  margin-bottom: 6px;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+  width: 100%;
+  padding: 10px 12px;
+  border: 1.5px solid #ccc;
+  border-radius: 5px;
+  font-size: 1rem;
+  transition: border-color 0.3s ease;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+textarea:focus {
+  border-color: #007acc;
+  outline: none;
+}
+
+.error-message {
+  color: #d93025;
+  font-size: 0.9rem;
+  margin-top: 4px;
+  min-height: 18px;
+}
+
+.success-message {
+  color: #0a7a0a;
+  font-size: 1.1rem;
+  margin-top: 15px;
+  font-weight: 600;
+}
+
+.required {
+  color: #d93025;
+}
+
+button {
+  background-color: #007acc;
+  color: white;
+  border: none;
+  padding: 12px 25px;
+  font-size: 1.1rem;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover,
+button:focus {
+  background-color: #005f99;
+  outline: none;
+}
+
+.interactive-section {
+  margin-top: 40px;
+}
+
+.color-box {
+  margin-top: 15px;
+  padding: 20px;
+  background-color: #e0e0e0;
+  border-radius: 6px;
+  text-align: center;
+  font-weight: 600;
+  color: #333;
+  transition: background-color 0.4s ease;
+}
+
+.color-box.active {
+  background-color: #007acc;
+  color: white;
+}
+
+.slider-container {
+  margin-top: 25px;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+#rangeSlider {
+  flex-grow: 1;
+  cursor: pointer;
+}
+
+footer {
+  text-align: center;
+  margin-top: 40px;
+  font-size: 0.9rem;
+  color: #777;
+}
